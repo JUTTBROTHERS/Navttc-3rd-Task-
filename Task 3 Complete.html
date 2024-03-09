@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img:hover {
+  border: 3px solid #000;
+  cursor: pointer;
+}
+
+img {
+  transition: border 0.3s ease;
+}
+
+img:hover::after {
+  content: "I am Image in Webpage";
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+</style>
+</head>
+<body>
+
+<center><img src="https://images.freecreatives.com/wp-content/uploads/2015/03/Huge-Backgrounds-63.jpg" alt="Sample image" height="75" width="75"></Center>
+
+</body>
+</html>
